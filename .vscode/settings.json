@@ -3,5 +3,11 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "editor.tabSize": 2,
+  "javascript.preferences.quoteStyle": "double",
+  "typescript.preferences.quoteStyle": "double",
+  "[javascript][typescript][javascriptreact][typescriptreact][html][css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

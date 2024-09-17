@@ -1,6 +1,7 @@
 {
   "name": "projeto-integrador-senac",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
@@ -10,7 +11,8 @@
   "devDependencies": {
     "prettier": "^3.2.5",
     "turbo": "^2.1.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "@repo/prettier-config-custom": "workspace:*"
   },
   "packageManager": "pnpm@8.15.6",
   "engines": {
