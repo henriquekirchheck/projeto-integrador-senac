@@ -7,7 +7,7 @@
   "editor.tabSize": 2,
   "javascript.preferences.quoteStyle": "double",
   "typescript.preferences.quoteStyle": "double",
-  "[javascript][typescript][javascriptreact][typescriptreact][html][css]": {
+  "[javascript][typescript][javascriptreact][typescriptreact][html][css][jsonc][json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
