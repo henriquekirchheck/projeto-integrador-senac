@@ -10,7 +10,7 @@ import pluginQuery from "@tanstack/eslint-plugin-query";
 
 export default tseslint.config(
   { ignores: ["dist"] },
-  ...pluginQuery.configs['flat/recommended'],
+  ...pluginQuery.configs["flat/recommended"],
   {
     extends: [
       js.configs.recommended,
