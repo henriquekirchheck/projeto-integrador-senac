@@ -4,29 +4,31 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "vinxi dev",
+    "build": "vinxi build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vinxi start"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.56.2",
     "@tanstack/react-query-devtools": "^5.56.2",
-    "@tanstack/react-router": "^1.57.17",
+    "@tanstack/react-router": "^1.58.7",
+    "@tanstack/react-router-with-query": "^1.58.7",
+    "@tanstack/router-devtools": "^1.58.7",
+    "@tanstack/start": "^1.58.8",
     "framer-motion": "^11.5.6",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vinxi": "^0.4.3"
   },
   "devDependencies": {
     "@catppuccin/tailwindcss": "^0.1.6",
     "@eslint/js": "^9.9.0",
     "@repo/prettier-config-custom": "workspace:*",
     "@tanstack/eslint-plugin-query": "^5.56.1",
-    "@tanstack/router-devtools": "^1.57.17",
     "@tanstack/router-plugin": "^1.57.15",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.9.0",
     "eslint-config-prettier": "^9.1.0",
@@ -39,6 +41,7 @@
     "tailwindcss": "^3.4.12",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite-tsconfig-paths": "^5.0.1"
   }
 }

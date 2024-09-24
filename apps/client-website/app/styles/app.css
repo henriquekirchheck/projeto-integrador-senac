@@ -4,9 +4,9 @@
 
 @font-face {
   font-family: 'Dancing Script';
-  src: url(./assets/fonts/dancing-script.ttf);
+  src: url(../assets/fonts/dancing-script.ttf);
 }
 @font-face {
   font-family: Inter;
-  src: url(./assets/fonts/inter.ttf);
+  src: url(../assets/fonts/inter.ttf);
 }

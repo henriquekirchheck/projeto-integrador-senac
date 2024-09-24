@@ -8,17 +8,17 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
-dist-ssr
-*.local
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+*.local
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.cache
+.env
+.vercel
+.output
+.vinxi
+
+/build/
+/api/
+/server/build
+/public/build
+.vinxi

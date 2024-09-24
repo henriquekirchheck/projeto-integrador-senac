@@ -1,12 +1,10 @@
 import { Link, LinkProps } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 
-import { Route as RouteIndex } from "../routes/index";
-
 const routes = [
   {
     name: "Home",
-    href: RouteIndex.fullPath,
+    href: "/",
   },
 ] as const satisfies {
   name: string;
