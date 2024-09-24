@@ -30,6 +30,12 @@ export default {
           "margin",
         ].join(" "),
       },
+      aspectRatio: {
+        card: "3 / 5"
+      },
+      gridTemplateRows: {
+        layout: "auto 1fr"
+      }
     },
     data: {
       active: 'status="active"',
