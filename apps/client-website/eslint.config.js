@@ -23,6 +23,7 @@ export default tseslint.config(
       globals: { ...globals.browser },
       parserOptions: {
         projectService: true,
+        // @ts-ignore
         tsconfigRootDir: import.meta.dirname,
         ecmaFeatures: {
           jsx: true,

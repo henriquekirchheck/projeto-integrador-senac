@@ -1,14 +1,14 @@
-// app/ssr.tsx
+/* eslint-disable react-refresh/only-export-components */ // This is fine because this file does not actually contain JSX
+/// <reference types="vinxi/types/server" />
 import {
   createStartHandler,
   defaultStreamHandler,
-} from '@tanstack/start/server'
-import { getRouterManifest } from '@tanstack/start/router-manifest'
+} from "@tanstack/start/server";
+import { getRouterManifest } from "@tanstack/start/router-manifest";
 
-import { createRouter } from './router'
+import { createRouter } from "./router";
 
-// eslint-disable-next-line react-refresh/only-export-components
 export default createStartHandler({
   createRouter,
   getRouterManifest,
-})(defaultStreamHandler)
+})(defaultStreamHandler);
