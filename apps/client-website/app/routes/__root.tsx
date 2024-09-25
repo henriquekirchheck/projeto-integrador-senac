@@ -10,7 +10,6 @@ import * as React from "react";
 import { Header } from "../components/Header";
 import type { QueryClient } from "@tanstack/react-query";
 
-// @ts-expect-error App can be imported with the url as it will be defined on runtime
 import appCss from "~/styles/app.css?url";
 
 export const Route = createRootRouteWithContext<{
@@ -29,7 +28,6 @@ export const Route = createRootRouteWithContext<{
     },
   ],
   links: () => [
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     { rel: "stylesheet", href: appCss },
   ],
   component: () => (
