@@ -32,7 +32,7 @@ export const Route = createRootRouteWithContext<{
   ],
   component: () => (
     <RootDocument>
-      <div className="h-dvh w-dvw bg-ctp-base font-sans text-ctp-text">
+      <div className="min-h-dvh min-w-dvw bg-ctp-base font-sans text-ctp-text">
         <Header />
         <Outlet />
       </div>

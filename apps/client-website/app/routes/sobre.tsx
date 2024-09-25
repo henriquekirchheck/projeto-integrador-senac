@@ -14,7 +14,7 @@ function About() {
           Pizzas de Qualidades desde 1983
         </h2>
         <img
-          className="w-full h-auto -scale-x-100 "
+          className="h-auto w-full -scale-x-100"
           src={pizzaDoSobre}
           alt="imagem_de_uma_pizza"
         />
@@ -23,11 +23,23 @@ function About() {
         <h1 className="text-center font-script text-3xl font-semibold">
           Sobre nós
         </h1>
-        <p className="text-base md:text-lg lg:text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          veritatis deleniti expedita, ipsa repudiandae qui deserunt officia
-          neque, rerum necessitatibus quia non maxime voluptatum, quibusdam odio
-          error veniam amet tenetur.
+        <p className="text-base md:text-lg lg:text-xl text-justify">
+          Bem-vindo à Placeholder Inc., onde a paixão pela pizza se encontra com
+          a criatividade! Fundada por um grupo de amigos que compartilham o amor
+          pela boa comida e momentos especiais, nossa pizzaria é mais do que um
+          simples lugar para comer: é um espaço acolhedor onde histórias são
+          contadas e memórias são feitas. Aqui, cada pizza é feita com
+          ingredientes frescos e de alta qualidade, escolhidos a dedo para
+          garantir sabores incríveis. Nossas receitas exclusivas combinam
+          tradições clássicas com toques contemporâneos, oferecendo opções que
+          agradam a todos os paladares — desde os amantes das pizzas
+          tradicionais até os mais aventureiros. Além das pizzas, você
+          encontrará um ambiente amigável e descontraído, perfeito para reunir
+          amigos e familiares. Nossa equipe está sempre pronta para atender com
+          um sorriso, tornando sua experiência ainda mais especial. Na
+          Placeholder Inc., acreditamos que cada fatia deve ser uma celebração.
+          Venha nos visitar e descubra porque somos a escolha certa para suas
+          refeições!
         </p>
       </div>
     </div>
