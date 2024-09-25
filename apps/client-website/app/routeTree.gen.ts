@@ -11,9 +11,15 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as SobreImport } from './routes/sobre'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
+
+const SobreRoute = SobreImport.update({
+  path: '/sobre',
+  getParentRoute: () => rootRoute,
+} as any)
 
 const IndexRoute = IndexImport.update({
   path: '/',
@@ -31,6 +37,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
+    '/sobre': {
+      id: '/sobre'
+      path: '/sobre'
+      fullPath: '/sobre'
+      preLoaderRoute: typeof SobreImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -38,32 +51,37 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/sobre': typeof SobreRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/sobre': typeof SobreRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
+  '/sobre': typeof SobreRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/sobre'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/sobre'
+  id: '__root__' | '/' | '/sobre'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  SobreRoute: typeof SobreRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  SobreRoute: SobreRoute,
 }
 
 export const routeTree = rootRoute
@@ -78,11 +96,15 @@ export const routeTree = rootRoute
     "__root__": {
       "filePath": "__root.tsx",
       "children": [
-        "/"
+        "/",
+        "/sobre"
       ]
     },
     "/": {
       "filePath": "index.tsx"
+    },
+    "/sobre": {
+      "filePath": "sobre.tsx"
     }
   }
 }
