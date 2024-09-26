@@ -8,18 +8,18 @@ export const Route = createFileRoute("/sobre")({
 
 function About() {
   return (
-    <div className="flex flex-wrap">
-      <div className="relative my-auto w-1/2 lg:w-1/3">
+    <div className="flex p-4">
+      <div className="relative my-auto w-1/2 lg:w-1/3 lg:block hidden">
         <h2 className="absolute z-10 w-full p-4 font-script text-4xl font-bold md:w-1/2 lg:w-1/3">
           Pizzas de Qualidades desde 1983
         </h2>
         <img
-          className="h-auto w-full -scale-x-100"
+          className="h-auto w-full -scale-x-100 rounded"
           src={pizzaDoSobre}
           alt="imagem_de_uma_pizza"
         />
       </div>
-      <div className="w-full p-4 md:w-1/2 lg:w-1/3">
+      <div className="w-full p-4">
         <h1 className="text-center font-script text-3xl font-semibold">
           Sobre nós
         </h1>
