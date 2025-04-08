@@ -23,7 +23,7 @@ export const DefaultCatchBoundary: FC<ErrorComponentProps> = ({ error }) => {
       <div className="flex gap-2 items-center flex-wrap">
         <button
           onClick={() => {
-            router.invalidate();
+            void router.invalidate();
           }}
           className={`px-2 py-1 bg-gray-600 dark:bg-gray-700 rounded text-white uppercase font-extrabold`}
         >

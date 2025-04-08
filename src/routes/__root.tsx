@@ -11,7 +11,7 @@ import { DefaultCatchBoundary } from "@/components/DefaultCatchBoundary";
 import { NotFound } from "@/components/NotFound";
 import { App } from "@/components/App";
 
-import themeScript from "@/lib/themeScript?url";
+import themeScript from "@/lib/themeScript?raw";
 
 export const Route = createRootRouteWithContext<
   ReturnType<typeof createContext>
@@ -23,7 +23,7 @@ export const Route = createRootRouteWithContext<
       { title: "Placeholder Inc." },
     ],
     links: [{ rel: "stylesheet", href: appCss }],
-    scripts: [{ src: themeScript, type: "module" }],
+    scripts: [{ children: themeScript }],
   }),
   errorComponent: (props) => (
     <RootDocument>
