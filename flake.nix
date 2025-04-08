@@ -14,6 +14,7 @@
       {
         devShell = pkgs.mkShell {
           buildInputs = [
+            pkgs.nodejs
             pkgs.nodePackages.pnpm
             pkgs.nodePackages.prettier
             pkgs.nodePackages.eslint
